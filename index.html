@@ -28,6 +28,11 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--main)}
 p{letter-spacing:-0.022em}
+.hov{position:relative;display:inline-block}
+.hov-pop{display:none;position:absolute;left:0;top:calc(100% + 10px);z-index:40;width:min(420px,calc(100vw - 40px));pointer-events:none;box-shadow:0 12px 32px rgba(0,0,0,.28);background:#000000}
+.hov:hover .hov-pop,.hov:focus-within .hov-pop{display:block}
+.hov-pop img{display:block;width:100%;height:auto}
+#programme li a.map,#programme .ex-bar a.map,#programme li a.ig{position:relative;z-index:1}
 .film{position:relative;cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-decoration-thickness:.08em;text-underline-offset:.2em}
 .film:hover,.film:focus{text-decoration-style:solid}
 .film:focus-visible{outline:2px solid #000000;outline-offset:3px}
@@ -74,6 +79,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <a href="#talks" style="display: inline-flex; align-items: center; min-height: 44px">Talks</a>
 <a href="#screenings" style="display: inline-flex; align-items: center; min-height: 44px">Screenings</a>
 <a href="#workshop" style="display: inline-flex; align-items: center; min-height: 44px">Workshop</a>
+<a href="#meet-greet" style="display: inline-flex; align-items: center; min-height: 44px">Meet &amp; Greet</a>
 <a href="#broadcast" style="display: inline-flex; align-items: center; min-height: 44px">Broadcast</a>
 <a href="#exhibit" style="display: inline-flex; align-items: center; min-height: 44px">Exhibit</a>
 <a href="#places" style="display: inline-flex; align-items: center; min-height: 44px">Where</a>
@@ -96,8 +102,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </div>
 <div style="flex: 1 1 260px">
 <p style="margin: 0; font-size: clamp(44px, 5.2vw, 76px); line-height: 1; letter-spacing: -0.04em; transform: rotate(-2deg); transform-origin: left bottom; white-space: nowrap">20—23 Nov</p>
-<p style="margin: 14px 0 0; font-size: clamp(22px, 2vw, 28px); letter-spacing: -0.025em">2026, Porto</p>
-<p style="margin: 10px 0 0; font-size: 16px; letter-spacing: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px"><span>in collaboration with</span> <a href="https://www.portopostdoc.com/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center"><img src="assets/porto-post-doc.png" alt="Porto/Post/Doc" width="40" height="30" style="display: block; width: 40px; height: auto"></a></p>
+<p style="margin: 14px 0 0; font-size: clamp(22px, 2vw, 28px); letter-spacing: -0.025em">Porto</p>
+<p style="margin: 10px 0 0; font-size: 16px; letter-spacing: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px"><span>by <a href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a> in collaboration with</span> <a href="https://www.portopostdoc.com/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center"><img src="assets/porto-post-doc.png" alt="Porto/Post/Doc" width="40" height="30" style="display: block; width: 40px; height: auto"></a></p>
 </div>
 
 </div>
@@ -113,7 +119,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 
 <section id="programme" style="background: #000000; color: #FFA600; padding: clamp(32px, 4vw, 56px) clamp(16px, 2.4vw, 36px) clamp(48px, 6vw, 88px)">
 <h2 style="color: var(--main); margin: 0 0 clamp(20px, 3vw, 36px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Programme<span style="display: inline-block; vertical-align: top; margin: 0.35em 0 0 0.6em; font-size: clamp(16px, 1.5vw, 22px); font-weight: 400; line-height: 1.1; letter-spacing: -0.03em; font-family: 'Transcript Display', 'Helvetica Neue', Arial, sans-serif; font-weight: 700">All events are free</span></h2>
-<ul aria-label="Venues" style="list-style: none; margin: 0 0 clamp(28px, 4vw, 48px); padding: 0; display: flex; flex-wrap: wrap; gap: 14px 36px; font-size: 17px; line-height: 1.3"><li style="display: flex; align-items: center; gap: 8px; color: #FFA600"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #FFA600"></span><a href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></li><li style="display: flex; align-items: center; gap: 8px; color: #5CE9FF"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #5CE9FF"></span><a href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></li><li style="display: flex; align-items: center; gap: 8px; color: #D1FF5C"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #D1FF5C"></span><a href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Cinema Batalha</a></li><li style="display: flex; align-items: center; gap: 8px; color: #FFFFFF"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #FFFFFF"></span><a href="https://maps.app.goo.gl/Vdj7TN3KtU8HrfFx7" target="_blank" rel="noopener">Maus Hábitos</a></li></ul>
+<ul aria-label="Venues" style="list-style: none; margin: 0 0 clamp(28px, 4vw, 48px); padding: 0; display: flex; flex-wrap: wrap; gap: 14px 36px; font-size: 17px; line-height: 1.3"><li style="display: flex; align-items: center; gap: 8px; color: #FFA600"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #FFA600"></span><a href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></li><li style="display: flex; align-items: center; gap: 8px; color: #5CE9FF"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #5CE9FF"></span><a href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></li><li style="display: flex; align-items: center; gap: 8px; color: #D1FF5C"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #D1FF5C"></span><a href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></li><li style="display: flex; align-items: center; gap: 8px; color: #FFFFFF"><span aria-hidden="true" style="flex: 0 0 auto; width: 14px; height: 14px; background: #FFFFFF"></span><a href="https://maps.app.goo.gl/Vdj7TN3KtU8HrfFx7" target="_blank" rel="noopener">Maus Hábitos</a></li></ul>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 40px 28px">
 
 <div>
@@ -123,30 +129,30 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">15h</span> · Talk</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#talk-independence" style="text-decoration: none">Breaking into Digital Independence through habit and film</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Steven Rice MacKay — Arroz Estúdios</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Canal180 HQ</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #5CE9FF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">17h</span> · Screening + Q&amp;A</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#cinema-novo" style="text-decoration: none">Cinema Novo Competition #01</a></h4>
 <ul lang="pt" style="list-style: none; margin: 8px 0 0; padding: 0; font-size: 17px; line-height: 1.25"><li>“Antes que nos Esqueçam”</li><li>“coisas que fui juntando”</li><li>“Homem”</li><li>“Brasas”</li></ul>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Cinema Passos Manuel</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">18h</span> · Talk</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#talk-decisive" style="text-decoration: none">Decisive Moment: Mastering the instinct of directing a single take</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Christophe Abric — La Blogothèque</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">19h</span> · Happy Hour</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em">Alinea A</h4>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #FFA600; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">21h</span> · Exhibition Opening + Q&amp;A</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#exhibit" style="text-decoration: none"><span style="letter-spacing: 0">Ξ||||||Ξ</span></a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Pedro Melo Alves</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Canal180 HQ</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p>
 </li>
 </ul>
 </div>
@@ -156,31 +162,31 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <ul style="list-style: none; margin: 0; padding: 0">
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #FFFFFF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">13h</span> · Meet &amp; Greet</p>
-<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em">Media Academy Lunch</h4>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Maus Hábitos</p>
+<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#lunch" style="text-decoration: none">Media Academy Lunch</a></h4>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/Vdj7TN3KtU8HrfFx7" target="_blank" rel="noopener">Maus Hábitos</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #5CE9FF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">15h</span> · Screening + Q&amp;A</p>
-<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#screening-blogotheque" style="text-decoration: none">Films by<br>La Blogothèque</a></h4>
+<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#screening-blogotheque" style="text-decoration: none">La Blogothèque</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Christophe Abric</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Cinema Passos Manuel</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #5CE9FF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">17h</span> · Screening + Q&amp;A</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#cinema-novo" style="text-decoration: none">Cinema Novo Competition #02</a></h4>
 <ul lang="pt" style="list-style: none; margin: 8px 0 0; padding: 0; font-size: 17px; line-height: 1.25"><li>“O”</li><li>“um corpo sem cavalo?”</li><li>“Tudo Voltaria Menos Eu”</li><li>“As Estátuas Também Morrem?”</li></ul>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Cinema Passos Manuel</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">18h</span> · Talk</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#talk-challenges" style="text-decoration: none">Challenges on production and cinematography: Recording performances on film</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Rasmus Stolberg — Brodie Sessions</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">19h</span> · Happy Hour</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em">Alinea A</h4>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 </ul>
 </div>
@@ -190,32 +196,32 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <ul style="list-style: none; margin: 0; padding: 0">
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #5CE9FF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">15h</span> · Screening + Q&amp;A</p>
-<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#screening-brodie" style="text-decoration: none">Films by<br>Brodie Sessions</a></h4>
+<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#screening-brodie" style="text-decoration: none">Brodie Sessions</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Rasmus Stolberg</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Cinema Passos Manuel</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #5CE9FF; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">17h</span> · Screening + Q&amp;A</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#cinema-novo" style="text-decoration: none">Cinema Novo Competition #03</a></h4>
 <ul lang="pt" style="list-style: none; margin: 8px 0 0; padding: 0; font-size: 17px; line-height: 1.25"><li>“Environmelisma”</li><li>“Milene”</li><li>“O Leite das Monarcas”</li><li>“Eu não sei sobre muita coisa”</li></ul>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Cinema Passos Manuel</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">18h</span> · Talk</p>
-<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em">TBD</h4>
-<p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">TBD</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#talk-documenting" style="text-decoration: none">Documenting Culture</a></h4>
+<p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Guests to be announced</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #D1FF5C; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">19h</span> · Happy Hour</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em">Alinea A</h4>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">High Life – Cinema Batalha</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #000000; color: #FFA600; box-shadow: inset 0 0 0 3px #FFA600">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">20h</span> · Broadcast</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#broadcast-direct-action" style="text-decoration: none">Direct Action</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Guillaume Cailleau and Ben Russell</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Canal180 – on TV</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0"><a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a> – on TV</p>
 </li>
 </ul>
 </div>
@@ -227,7 +233,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">11h</span> · Workshop</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#workshop" style="text-decoration: none">Music discovery, the role of radio, algorithms and curation</a></h4>
 <p style="margin: 6px 0 0; font-size: 20px; line-height: 1.2">Luís Oliveira</p>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ Canal180 HQ</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p>
 </li>
 
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #FFA600; color: #000000">
@@ -235,18 +241,18 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#broadcast-badlands-octubre" style="text-decoration: none">Badlands + Octubre.tv</a></h4>
 <div style="margin: 6px 0 0; font-size: 20px; line-height: 1.2"><div>Miguel Mesquita</div><span>Diego Delgado</span></div>
 
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ Canal180 HQ</p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #FFA600; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">18h</span> · Radio Broadcast</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#broadcast-polyeste" style="text-decoration: none">Polyester</a></h4>
 
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ Canal180 HQ</p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
 </li>
 <li style="padding: 14px 16px 16px; margin-bottom: 10px; background: #FFA600; color: #000000">
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">19h</span> · Radio Broadcast</p>
 <h4 style="margin: 0; font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#broadcast-smokopopol" style="text-decoration: none">Smokopopol</a></h4>
-<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ Canal180 HQ</p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
+<p style="margin: 14px 0 0; font-size: 15px; letter-spacing: 0">Radio Jardim @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p><p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0; margin-top: 0px">Come watch it live!</p>
 
 </li>
 </ul>
@@ -258,7 +264,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <p style="margin: 0 0 8px; font-size: 15px; letter-spacing: 0"><span style="font-weight: 500">Every day, 20 Nov—17 Jan</span> · Exhibition</p>
 <h3 style="margin: 0; font-size: clamp(30px, 3vw, 46px); font-weight: 500; line-height: 1.02; letter-spacing: -0.035em"><a href="#exhibit" style="text-decoration: none"><span style="letter-spacing: 0">Ξ||||||Ξ</span> by Pedro Melo Alves</a></h3>
 </div>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0">Canal180 HQ</p>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p>
 </div>
 </section>
 
@@ -266,70 +272,73 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Talks</h2>
 
 <article id="talk-independence" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 20/11</p><p style="margin: 0">Canal180 HQ</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 20/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Breaking into Digital Independence through habit and film</h3>
-<p style="margin: 0">with Steven Rice MacKay, <b>Arroz Estúdios</b></p>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/d3rb3ozz" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p>
+<p style="margin: 0 0 12px">with Steven Rice MacKay, <b><a href="https://www.arrozestudios.pt/" target="_blank" rel="noopener">Arroz Estúdios</a></b></p>
+<p style="margin: 0; max-width: 36em">This talk is supported by RESET! Network (The European Network of Independent Cultural and Media Organizations) and co-financed by the EU.</p>
 </div>
 </article>
 
 <article id="talk-decisive" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 20/11</p><p style="margin: 0">High Life – Cinema Batalha</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 20/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Decisive Moment: Mastering the instinct of directing a single take</h3>
 <p style="margin: 0 0 12px">with Christophe Abric, <b><a href="https://www.blogotheque.net/" target="_blank" rel="noopener">La Blogothèque</a></b></p>
 <p style="margin: 0; max-width: 36em">A conversation about instinct, preparation and spontaneity in directing single-take performances, and finding the balance between cinematic control and the unpredictable energy of a live moment.</p>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/886e0qs0" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p>
 </div>
 </article>
 
 <article id="talk-challenges" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 21/11</p><p style="margin: 0">High Life – Cinema Batalha</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 21/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Recording performances on film:&nbsp;<span style="font-size: clamp(32px, 3.9vw, 58px); letter-spacing: -0.04em">Challenges for production and cinematography</span></h3>
 <p style="margin: 0 0 12px">with Rasmus Stolberg, <b><a href="https://brodiesessions.com/" target="_blank" rel="noopener">Brodie Sessions</a></b></p>
 <p style="margin: 0; max-width: 36em">From production constraints to cinematographic choices, how do you translate the energy and spontaneity of a musical performance into a cinematic experience?</p>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/hmyrsqlc" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p>
 </div>
 </article>
 
 
+<article id="talk-documenting" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 22/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">High Life – Batalha Centro de Cinema</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
+<div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Documenting Culture</h3>
+<p style="margin: 0 0 12px">Guests to be announced</p>
+<p style="margin: 0; max-width: 36em">Capturing artists, communities and subcultures, and the role of independent publications in giving visibility to scenes that exist beyond the mainstream.</p>
+</div>
+</article>
 </section>
 
 <section id="screenings" style="padding: clamp(32px, 4vw, 56px) clamp(16px, 2.4vw, 36px) 0">
 <h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Screenings</h2>
 
 <article id="screening-blogotheque" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 21/11</p><p style="margin: 0">Cinema Passos Manuel</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 21/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Films by <a href="https://www.blogotheque.net/" target="_blank" rel="noopener">La Blogothèque</a></h3>
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><span class="hov"><a href="https://www.blogotheque.net/" target="_blank" rel="noopener">La Blogothèque</a><span class="hov-pop" aria-hidden="true"><img src="assets/la-blogotheque.jpg" alt="" width="840" height="471" loading="lazy"></span></span></h3>
 <p style="margin: 0 0 12px">+ Q&amp;A with Christophe Abric</p>
 <p style="margin: 0; max-width: 36em">A selection of the Paris-born Take Away Shows: musicians filmed in one take, in places that were never meant to be stages. Q&amp;A with filmmaker Christophe Abric at the end.</p>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/z0ccwrku" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p>
 </div>
 </article>
 
 <article id="screening-brodie" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 22/11</p><p style="margin: 0">Cinema Passos Manuel</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">15h — 22/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Films by <a href="https://brodiesessions.com/" target="_blank" rel="noopener">Brodie Sessions</a></h3>
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><span class="hov"><a href="https://brodiesessions.com/" target="_blank" rel="noopener">Brodie Sessions</a><span class="hov-pop" aria-hidden="true"><img src="assets/brodie-sessions.jpg" alt="" width="840" height="612" loading="lazy"></span></span></h3>
 <p style="margin: 0 0 12px">+ Q&amp;A with Rasmus Stolberg</p>
 <p style="margin: 0; max-width: 36em">Intimate live sessions from the Danish music platform that shoots on analogue film, with artists performing in unique architectural spaces.&nbsp;<span style="letter-spacing: -0.418px">Q&amp;A with producer Rasmus Stolberg at the end.</span></p>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/q2w1jyp2" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p>
 </div>
 </article>
 
 <article id="cinema-novo" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">17h — 20, 21 and 22/11</p><p style="margin: 0">Cinema Passos Manuel</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">17h — 20, 21 and 22/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Cinema Novo Competition</h3>
 <p style="margin: 0 0 12px">+ Q&amp;A with Cinema Novo directors</p>
-<p style="margin: 0; max-width: 36em">Cinema Novo Competition brings together short films by young filmmakers and students, reflecting the vitality of today’s film schools. A programme that bets on new voices, perspectives and forms, with the support of Canal180.</p>
-<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#01 · Fri 20/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Antes que nos Esqueçam</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-antesque-film.jpg" alt="Still from Antes que nos Esqueçam" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Antes que nos Esqueçam</span><span class="fp-en">Before We Fade Away</span><span class="fp-meta">Sebastian Molina Ruiz · MEX 2026 · Documentary · 19′</span><span class="fp-syn">On the night of the Mexican football league final, a group of friends roam the streets of Mexico City one last time. Between graffiti, robberies and police chases, the city they know becomes a territory of farewell. Over the course of the night, their friendship and the spaces they share are put to the test, in an urban odyssey that becomes a love letter to a city about to be left behind.</span></span></span> — Sebastian Molina Ruiz, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">coisas que fui juntando</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-things-film.jpg" alt="Still from coisas que fui juntando" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">coisas que fui juntando</span><span class="fp-en">things that I was gathering</span><span class="fp-meta">Ekaterina Zhuzhleva · BEL, FIN, PRT 2025 · Animation · 6′</span><span class="fp-syn">In this autobiographical animated documentary, the narrator gathers books, stuffed toys and food for friends detained for protesting against the war. The gesture repeats until the list seems endless. As political repression grows, gathering objects turns into preparing for her own departure. A reflection on war, exile, guilt and the intimate cost of resistance.</span></span></span> — Ekaterina Zhuzhleva, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Homem</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-homem-film.jpg" alt="Still from Homem" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Homem</span><span class="fp-en">Man</span><span class="fp-meta">Fábio Zilberman Iuchno · BRA, PRT 2025 · Documentary · 16′</span><span class="fp-syn">Within the walls of a prison, a group of inmates write scenes about a “Man”. As they give body to the words, the cells turn into childhood landscapes, hospital rooms and places flooded with light from outside. As the story unfolds, the line between imagination and reality grows ever more blurred, leaving the identity of that “Man” open.</span></span></span> — Fábio Zilberman Iuchno, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Brasas</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-embers-film.jpg" alt="Still from Brasas" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Brasas</span><span class="fp-en">Embers</span><span class="fp-meta">Baltazar Mello · BEL 2026 · Documentary · 22′</span><span class="fp-syn">A year after a fire devastated inland Portugal, “Brasas” follows a fire station in suspension and a mountain village where life revolves around the chestnut harvest. Between landscape, work and memory, the film observes what remains after disaster: traces of the fire, the fragility of life and the persistence of those who stay. Beneath the routine, the embers hold the risk of burning again.</span></span></span> — Baltazar Mello, 2026</li></ul><p style="margin: 14px 0 0"><a class="free-signup" href="https://luma.com/klbyzh6j" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p></div>
-<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#02 · Sat 21/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">O</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-o-film.jpg" alt="Still from O" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">O</span><span class="fp-meta">Francisca Alarcão · PRT 2026 · Experimental · 14′</span><span class="fp-syn">Francisca lives with an uncontrollable aversion to belly buttons and similar shapes. What seems an ordinary part of the body causes her deep anxiety. When therapy is not enough, she turns to methods with no scientific basis in search of relief. Shot on 16mm, the film turns this phobia into a reflection on uncertainty and the wish to heal.</span></span></span> — Francisca Alarcão, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">um corpo sem cavalo?</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-cavalo-film.jpg" alt="Still from um corpo sem cavalo?" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">um corpo sem cavalo?</span><span class="fp-en">a body without a horse?</span><span class="fp-meta">Lara Fuke · PRT 2026 · Animation · 8′</span><span class="fp-syn">“um corpo sem cavalo?” follows a body searching for identification, among voids, absences and unstable forms. Through animation, drawing and movement, Lara Fuke builds a poetic reflection on the body and transformation, where it can be human, fable, technology or image. What is missing becomes a field of movement and of self-recognition.</span></span></span> — Lara Fuke, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Tudo Voltaria Menos Eu</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-voltaria-film.jpg" alt="Still from Tudo Voltaria Menos Eu" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Tudo Voltaria Menos Eu</span><span class="fp-en">All Would Return But Me</span><span class="fp-meta">Nina Eli · PRT 2026 · Documentary · 17′</span><span class="fp-syn">“Tudo Voltaria Menos Eu” sets out to recover the memory of a long-forgotten poet. From the fragments that remain, the film follows the path of a returnee and the uncertain movement between departure and return. As personal memory meets the gaps in the archive, the film reflects on absence, remembrance and the fragile possibility of rebuilding a life from what has survived.</span></span></span> — Nina Eli, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">As Estátuas Também Morrem?</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-estatuas-film.jpg" alt="Still from As Estátuas Também Morrem?" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">As Estátuas Também Morrem?</span><span class="fp-en">Statues Also Die?</span><span class="fp-meta">Thais Fernandes · BEL, BRA, HUN, PRT 2025 · Documentary · 11′</span><span class="fp-syn">The weight of history grows light in children’s hands. In a park in Budapest, a group of kids become a team of interviewers among huge communist statues that have found their final resting place there. Their questions awaken forgotten echoes and, through playful editing, the film fits the scale of a country’s past and present into that space.</span></span></span> — Thais Fernandes, 2025</li></ul><p style="margin: 14px 0 0"><a class="free-signup" href="https://luma.com/pennbovf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p></div>
-<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#03 · Sun 22/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Environmelisma</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-environmelisma-film.jpg" alt="Still from Environmelisma" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Environmelisma</span><span class="fp-meta">Lorenzo Sandoval, Pedro André · ESP 2025 · Documentary · 10′</span><span class="fp-syn">“Environmelisma” grows out of research into three interconnected extractive processes in Murcia: mining in La Unión, construction in La Manga and agribusiness around the Mar Menor. Structured as a spiral, the film revisits these places, combining archive material with new footage. Through sound, texture and landscape, it seeks to capture the ecological trauma inscribed in the territory.</span></span></span> — Lorenzo Sandoval, Pedro André, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Milene</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-milene-film.jpg" alt="Still from Milene" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Milene</span><span class="fp-meta">Francisco Fonseca Cândido · PRT 2026 · Fiction · 12′</span><span class="fp-syn">Milene, a 28-year-old Angolan woman, has been living in Portugal for a year. By day she cares for an elderly woman; by night she cleans a shopping centre. Between exhausting routines, bureaucratic and social obstacles, loneliness and longing for what she left behind, she tries to build a new life without losing her dignity, holding on to small gestures of hope and the possibility of a lighter future.</span></span></span> — Francisco Fonseca Cândido, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">O Leite das Monarcas</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-leite-film.jpg" alt="Still from O Leite das Monarcas" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">O Leite das Monarcas</span><span class="fp-en">The Milk of Monarchs</span><span class="fp-meta">Francisco Nuno Rodrigues · PRT 2025 · Documentary · 10′</span><span class="fp-syn">An experimental documentary built from Super 8 and digital footage, family memory and myth. A little boy hears a secret whispered among the grass and sets out to discover its meaning. Around him, seemingly still images come to life and reveal a story never recorded: the forbidden desire of a monarch. The film brings together trauma, memory and metamorphosis.</span></span></span> — Francisco Nuno Rodrigues, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Eu não sei sobre muita coisa</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-eunaosei-film.jpg" alt="Still from Eu não sei sobre muita coisa" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Eu não sei sobre muita coisa</span><span class="fp-en">I Don’t Know Much About Anything</span><span class="fp-meta">Rebecca Moreno · PRT 2025 · Documentary · 10′</span><span class="fp-syn">A filmmaker travels across north-east Brazil, from Tremedal in Bahia to Enseada Grande in Maranhão, looking for traces that might help rebuild the fragmented memories of her origins. Along the way, places, people, photographs and archive images reveal the erased histories of a marginalised people. The search for her ancestors becomes a reflection on identity, memory and belonging.</span></span></span> — Rebecca Moreno, 2025</li></ul><p style="margin: 14px 0 0"><a class="free-signup" href="https://luma.com/hqd9d9xt" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up for free</a></p></div>
-<p style="margin: 22px 0 0"><a class="free-signup" href="https://portopostdoc.com/home/festival/2026/programas/view?id=290" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">See more details</a></p>
+<p style="margin: 0; max-width: 36em">Cinema Novo Competition brings together short films by young filmmakers and students, reflecting the vitality of today’s film schools. A programme that bets on new voices, perspectives and forms, with the support of <a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a>.</p>
+<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#01 · Fri 20/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Antes que nos Esqueçam</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-antesque-film.jpg" alt="Still from Antes que nos Esqueçam" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Antes que nos Esqueçam</span><span class="fp-en">Before We Fade Away</span><span class="fp-meta">Sebastian Molina Ruiz · MEX 2026 · Documentary · 19′</span><span class="fp-syn">On the night of the Mexican football league final, a group of friends roam the streets of Mexico City one last time. Between graffiti, robberies and police chases, the city they know becomes a territory of farewell. Over the course of the night, their friendship and the spaces they share are put to the test, in an urban odyssey that becomes a love letter to a city about to be left behind.</span></span></span> — Sebastian Molina Ruiz, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">coisas que fui juntando</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-things-film.jpg" alt="Still from coisas que fui juntando" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">coisas que fui juntando</span><span class="fp-en">things that I was gathering</span><span class="fp-meta">Ekaterina Zhuzhleva · BEL, FIN, PRT 2025 · Animation · 6′</span><span class="fp-syn">In this autobiographical animated documentary, the narrator gathers books, stuffed toys and food for friends detained for protesting against the war. The gesture repeats until the list seems endless. As political repression grows, gathering objects turns into preparing for her own departure. A reflection on war, exile, guilt and the intimate cost of resistance.</span></span></span> — Ekaterina Zhuzhleva, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Homem</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-homem-film.jpg" alt="Still from Homem" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Homem</span><span class="fp-en">Man</span><span class="fp-meta">Fábio Zilberman Iuchno · BRA, PRT 2025 · Documentary · 16′</span><span class="fp-syn">Within the walls of a prison, a group of inmates write scenes about a “Man”. As they give body to the words, the cells turn into childhood landscapes, hospital rooms and places flooded with light from outside. As the story unfolds, the line between imagination and reality grows ever more blurred, leaving the identity of that “Man” open.</span></span></span> — Fábio Zilberman Iuchno, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Brasas</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-embers-film.jpg" alt="Still from Brasas" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Brasas</span><span class="fp-en">Embers</span><span class="fp-meta">Baltazar Mello · BEL 2026 · Documentary · 22′</span><span class="fp-syn">A year after a fire devastated inland Portugal, “Brasas” follows a fire station in suspension and a mountain village where life revolves around the chestnut harvest. Between landscape, work and memory, the film observes what remains after disaster: traces of the fire, the fragility of life and the persistence of those who stay. Beneath the routine, the embers hold the risk of burning again.</span></span></span> — Baltazar Mello, 2026</li></ul></div>
+<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#02 · Sat 21/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">O</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-o-film.jpg" alt="Still from O" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">O</span><span class="fp-meta">Francisca Alarcão · PRT 2026 · Experimental · 14′</span><span class="fp-syn">Francisca lives with an uncontrollable aversion to belly buttons and similar shapes. What seems an ordinary part of the body causes her deep anxiety. When therapy is not enough, she turns to methods with no scientific basis in search of relief. Shot on 16mm, the film turns this phobia into a reflection on uncertainty and the wish to heal.</span></span></span> — Francisca Alarcão, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">um corpo sem cavalo?</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-cavalo-film.jpg" alt="Still from um corpo sem cavalo?" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">um corpo sem cavalo?</span><span class="fp-en">a body without a horse?</span><span class="fp-meta">Lara Fuke · PRT 2026 · Animation · 8′</span><span class="fp-syn">“um corpo sem cavalo?” follows a body searching for identification, among voids, absences and unstable forms. Through animation, drawing and movement, Lara Fuke builds a poetic reflection on the body and transformation, where it can be human, fable, technology or image. What is missing becomes a field of movement and of self-recognition.</span></span></span> — Lara Fuke, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Tudo Voltaria Menos Eu</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-voltaria-film.jpg" alt="Still from Tudo Voltaria Menos Eu" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Tudo Voltaria Menos Eu</span><span class="fp-en">All Would Return But Me</span><span class="fp-meta">Nina Eli · PRT 2026 · Documentary · 17′</span><span class="fp-syn">“Tudo Voltaria Menos Eu” sets out to recover the memory of a long-forgotten poet. From the fragments that remain, the film follows the path of a returnee and the uncertain movement between departure and return. As personal memory meets the gaps in the archive, the film reflects on absence, remembrance and the fragile possibility of rebuilding a life from what has survived.</span></span></span> — Nina Eli, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">As Estátuas Também Morrem?</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-estatuas-film.jpg" alt="Still from As Estátuas Também Morrem?" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">As Estátuas Também Morrem?</span><span class="fp-en">Statues Also Die?</span><span class="fp-meta">Thais Fernandes · BEL, BRA, HUN, PRT 2025 · Documentary · 11′</span><span class="fp-syn">The weight of history grows light in children’s hands. In a park in Budapest, a group of kids become a team of interviewers among huge communist statues that have found their final resting place there. Their questions awaken forgotten echoes and, through playful editing, the film fits the scale of a country’s past and present into that space.</span></span></span> — Thais Fernandes, 2025</li></ul></div>
+<div style="margin-top: 22px; max-width: 36em"><p style="margin: 0 0 6px; font-weight: 500">#03 · Sun 22/11, 17h</p><ul style="list-style: none; margin: 0; padding: 0"><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Environmelisma</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-environmelisma-film.jpg" alt="Still from Environmelisma" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Environmelisma</span><span class="fp-meta">Lorenzo Sandoval, Pedro André · ESP 2025 · Documentary · 10′</span><span class="fp-syn">“Environmelisma” grows out of research into three interconnected extractive processes in Murcia: mining in La Unión, construction in La Manga and agribusiness around the Mar Menor. Structured as a spiral, the film revisits these places, combining archive material with new footage. Through sound, texture and landscape, it seeks to capture the ecological trauma inscribed in the territory.</span></span></span> — Lorenzo Sandoval, Pedro André, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Milene</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-milene-film.jpg" alt="Still from Milene" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Milene</span><span class="fp-meta">Francisco Fonseca Cândido · PRT 2026 · Fiction · 12′</span><span class="fp-syn">Milene, a 28-year-old Angolan woman, has been living in Portugal for a year. By day she cares for an elderly woman; by night she cleans a shopping centre. Between exhausting routines, bureaucratic and social obstacles, loneliness and longing for what she left behind, she tries to build a new life without losing her dignity, holding on to small gestures of hope and the possibility of a lighter future.</span></span></span> — Francisco Fonseca Cândido, 2026</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">O Leite das Monarcas</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-leite-film.jpg" alt="Still from O Leite das Monarcas" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">O Leite das Monarcas</span><span class="fp-en">The Milk of Monarchs</span><span class="fp-meta">Francisco Nuno Rodrigues · PRT 2025 · Documentary · 10′</span><span class="fp-syn">An experimental documentary built from Super 8 and digital footage, family memory and myth. A little boy hears a secret whispered among the grass and sets out to discover its meaning. Around him, seemingly still images come to life and reveal a story never recorded: the forbidden desire of a monarch. The film brings together trauma, memory and metamorphosis.</span></span></span> — Francisco Nuno Rodrigues, 2025</li><li style="padding: 6px 0; border-top: 1px solid #000000"><span class="film" tabindex="0">“<span lang="pt">Eu não sei sobre muita coisa</span>”<span class="film-pop" role="tooltip"><img src="assets/films/ppd26-eunaosei-film.jpg" alt="Still from Eu não sei sobre muita coisa" loading="lazy" width="760" height="428"><span class="fp-title" lang="pt">Eu não sei sobre muita coisa</span><span class="fp-en">I Don’t Know Much About Anything</span><span class="fp-meta">Rebecca Moreno · PRT 2025 · Documentary · 10′</span><span class="fp-syn">A filmmaker travels across north-east Brazil, from Tremedal in Bahia to Enseada Grande in Maranhão, looking for traces that might help rebuild the fragmented memories of her origins. Along the way, places, people, photographs and archive images reveal the erased histories of a marginalised people. The search for her ancestors becomes a reflection on identity, memory and belonging.</span></span></span> — Rebecca Moreno, 2025</li></ul></div>
 </div>
 </article>
 </section>
@@ -338,7 +347,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Workshop</h2>
 
 <article style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">11h—13h — 23/11</p><p style="margin: 0">Canal180 HQ</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">11h—13h — 23/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Music discovery, the role of radio, algorithms and curation</h3>
 <p style="margin: 0 0 12px">with Luís Oliveira</p>
@@ -354,28 +363,42 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </article>
 </section>
 
+<section id="meet-greet" style="padding: clamp(32px, 4vw, 56px) clamp(16px, 2.4vw, 36px) 0">
+<h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Meet &amp; Greet</h2>
+
+<article id="lunch" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">13h — 21/11</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/Vdj7TN3KtU8HrfFx7" target="_blank" rel="noopener">Maus Hábitos</a></p><p style="margin: 12px 0 0; font-weight: 500">25€</p></div>
+<div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Media Academy Lunch</h3>
+<p style="margin: 0 0 12px; max-width: 36em">Bringing together the teams, guests, filmmakers, artists, industry professionals and audiences of <a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a> and Porto/Post/Doc, this informal lunch is a chance to meet beyond the screenings and talks.</p>
+<p style="margin: 0; max-width: 36em">Around a shared table, it breaks down the boundaries between creators, industry and audiences, encouraging conversations, new relationships and unexpected collaborations, and connects both communities with the city’s wider cultural scene.</p>
+<p style="margin: 22px 0 0"><a class="free-signup" href="https://luma.com/3bkcyqzv" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; padding: 0 22px; background: #000000; color: var(--main); border: 0; border-radius: 0; font: inherit; font-size: 18px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer">Sign up · 25€</a></p>
+</div>
+</article>
+</section>
+
 <section id="broadcast" style="padding: clamp(32px, 4vw, 56px) clamp(16px, 2.4vw, 36px) 0">
 <h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Broadcast</h2>
 
 <article id="broadcast-direct-action" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">20h — 22/11</p><p style="margin: 0">Canal180 – on TV</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">20h — 22/11</p><p style="margin: 0"><a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a> – on TV</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Direct Action</h3>
+<h3 style="margin: 0; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><span class="hov"><a href="https://www.youtube.com/watch?v=sxzZU-xaORI" target="_blank" rel="noopener">Direct Action</a><span class="hov-pop" aria-hidden="true"><img src="assets/direct-action.jpg" alt="" width="596" height="335" loading="lazy"></span></span></h3>
 <p style="margin: 12px 0 0">by Guillaume Cailleau and Ben Russell</p>
 <p style="margin: 12px 0 0; max-width: 36em">The title refers to a protest tactic that aims to achieve results by the most effective means. A portrait of an important community in France, which brings together activists, anarchists, farmers and people considered eco-terrorists by the French government. This community has already survived several onslaughts that would have wiped it out, and has even created a movement focused on climate change. The film delves into the heart of the people who make up the community.</p>
 </div>
 </article>
 
 <article id="broadcast-badlands-octubre" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">17h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ Canal180 HQ<br>Come watch it live!</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">17h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a><br>Come watch it live!</p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Badlands + Octubre.tv</h3>
-<p style="margin: 0">with Miguel Mesquita, Badlands / Cinema Passos Manuel<br>and Diego Delgado, Octubre.tv<br>moderated by Canal180</p>
+<p style="margin: 0">with Miguel Mesquita, Badlands / <a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a><br>and Diego Delgado, Octubre.tv<br>moderated by <a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a></p>
 </div>
 </article>
 
 <article id="broadcast-polyeste" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ Canal180 HQ<br><span style="letter-spacing: -0.418px">Come watch it live!</span></p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">18h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a><br><span style="letter-spacing: -0.418px">Come watch it live!</span></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><a href="https://polyester7.bandcamp.com/" target="_blank" rel="noopener">Polyester</a></h3>
 <p style="margin: 0; max-width: 36em">A collective of musicians tied to Porto’s experimental scene and its more underground circuit.</p>
@@ -383,7 +406,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </article>
 
 <article id="broadcast-smokopopol" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">19h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ Canal180 HQ<br><span style="letter-spacing: -0.418px">Come watch it live!</span></p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">19h — 23/11</p><p style="margin: 0"><a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Rádio Jardim</a> @ <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a><br><span style="letter-spacing: -0.418px">Come watch it live!</span></p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><a href="https://www.mixcloud.com/xxxunknowxxx/" target="_blank" rel="noopener">Smokopopol</a></h3>
 <p style="margin: 0; max-width: 36em">A French DJ based in Porto who has worked with stations such as Radio Relativa (Madrid) and LYL Radio (Lyon), bringing a wider perspective on independent and community radio in Europe.</p>
@@ -395,12 +418,12 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <h2 style="margin: 0 0 clamp(28px, 4vw, 56px); font-size: clamp(64px, 12.5vw, 190px); font-weight: 500; line-height: 0.9; letter-spacing: -0.05em">Exhibit</h2>
 
 <article style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
-<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">Every day — 20/11 to 17/01</p><p style="margin: 0">9:16 Digital Gallery</p><p style="margin: 12px 0 0; font-weight: 500">Opening + Q&amp;A — 21h, 20/11</p></div>
+<div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500">Every day — 20/11 to 17/01</p><p style="margin: 0"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">9:16 Digital Gallery</a></p><p style="margin: 12px 0 0; font-weight: 500">Opening + Q&amp;A — 21h, 20/11</p><p style="margin: 12px 0 0; font-weight: 500">Free entry</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
 <h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: 0"><a href="https://llllll-mater.live/en" target="_blank" rel="noopener">Ξ||||||Ξ</a></h3>
 <p style="margin: 0 0 12px">with <a href="https://pedromeloalves.com/" target="_blank" rel="noopener">Pedro Melo Alves</a></p>
 <p style="margin: 0; max-width: 36em"><span style="letter-spacing: 0">Ξ||||||Ξ</span> (read “imm”) is a transdisciplinary sensory narrative by composer Pedro Melo Alves, at the intersection of music, techno-performance and digital arts. Questioning the threads that link high culture, mainstream pop and urban movements to their ancestral roots, the work presents itself as an open stage for contemporary ontological debate and for transhumanist and posthumanist inquiry.</p>
-<p style="margin: 14px 0 0; max-width: 36em">For 180 Media Academy, an exhibition version of the piece will be shown on the 9:16 Digital Gallery, every day from 20 November to 17 January.</p>
+<p style="margin: 14px 0 0; max-width: 36em">For 180 Media Academy, an exhibition version of the piece will be shown on the <a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">9:16 Digital Gallery</a>, every day from 20 November to 17 January.</p>
 <p style="margin: 14px 0 0; max-width: 36em">The exhibition opens on Friday 20 November at 21h, followed by a Q&amp;A with Pedro Melo Alves.</p>
 </div>
 </article>
@@ -412,7 +435,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <article id="place-batalha" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
 <div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500"><a href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">Praça da Batalha, 47</a></p><p style="margin: 0">Talks and happy hours, at High Life</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Cinema Batalha</h3>
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><a class="map" href="https://maps.app.goo.gl/d8GZSoNhs5Ei8WPU9" target="_blank" rel="noopener">Batalha Centro de Cinema</a></h3>
 <p style="margin: 0; max-width: 36em">Porto’s historic cinema. Film screenings began in 1906 at the Salão High-Life, which moved to Praça da Batalha in 1908; the building was restored and reopened in December 2022 as Batalha Centro de Cinema. Our talks and happy hours take place at High Life, its bar.</p>
 </div>
 </article>
@@ -420,7 +443,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <article id="place-passos" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
 <div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500"><a href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Rua de Passos Manuel, 137</a></p><p style="margin: 0">Screenings</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Cinema Passos Manuel</h3>
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></h3>
 <p style="margin: 0; max-width: 36em">A small cinema inside the Coliseu do Porto building, on the site of the old Salão Jardim Passos Manuel. Its Cine-Estúdio opened in 1971, devoted to independent and auteur cinema, and today it is also a bar and dance floor and a regular home for the city’s film festivals, <a href="https://www.portopostdoc.com/" target="_blank" rel="noopener">Porto/Post/Doc</a> among them.</p>
 </div>
 </article>
@@ -428,8 +451,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <article id="place-canal180" style="display: flex; flex-wrap: wrap; gap: 14px 32px; padding: 20px 0 clamp(36px, 4vw, 56px); border-top: 3px solid #000000">
 <div style="flex: 1 1 220px"><p style="margin: 0; font-weight: 500"><a href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Rua de Miguel Bombarda, 425</a></p><p style="margin: 0">Talk, workshop, Radio Jardim and exhibition</p></div>
 <div style="flex: 999 1 560px; min-width: 0; max-width: 62rem">
-<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Canal180 HQ</h3>
-<p style="margin: 0; max-width: 36em">Canal180’s home in Porto, on Rua de Miguel Bombarda. It hosts the opening talk, the workshop, the <a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Radio Jardim</a> walk-in broadcasts and the Ξ||||||Ξ exhibition.</p>
+<h3 style="margin: 0 0 12px; font-size: clamp(32px, 3.9vw, 58px); font-weight: 500; line-height: 1; letter-spacing: -0.04em"><a class="map" href="https://maps.app.goo.gl/cuz2F9ejHRxdXSxr6" target="_blank" rel="noopener">Canal180 HQ</a></h3>
+<p style="margin: 0; max-width: 36em"><a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a>’s home in Porto, on Rua de Miguel Bombarda. It hosts the opening talk, the workshop, the <a href="https://www.radiojardim.net/" target="_blank" rel="noopener">Radio Jardim</a> walk-in broadcasts and the Ξ||||||Ξ exhibition.</p>
 </div>
 </article>
 </section>
@@ -452,8 +475,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 
 <article style="padding-top: 14px; border-top: 3px solid var(--main)">
 <h3 style="margin: 0; font-size: clamp(30px, 2.9vw, 42px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Steven Rice MacKay</h3>
-<p style="margin: 8px 0 14px">Founder, Arroz Estudios</p>
-<p style="margin: 0">Steven Rice MacKay founded Arroz Estudios, a cultural association and artist residency in Lisbon’s Beato district. A DJ and record collector, he ran parties and programmed venues in the UK before moving to Lisbon.</p>
+<p style="margin: 8px 0 14px">Founder, <a href="https://www.arrozestudios.pt/" target="_blank" rel="noopener">Arroz Estúdios</a></p>
+<p style="margin: 0">Steven Rice MacKay founded Arroz Estúdios, a cultural association and artist residency in Lisbon’s Beato district. A DJ and record collector, he ran parties and programmed venues in the UK before moving to Lisbon.</p>
 </article>
 
 <article style="padding-top: 14px; border-top: 3px solid var(--main)">
@@ -470,8 +493,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 
 <article style="padding-top: 14px; border-top: 3px solid var(--main)">
 <h3 style="margin: 0; font-size: clamp(30px, 2.9vw, 42px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">Miguel Mesquita</h3>
-<p style="margin: 8px 0 14px">Badlands / Cinema Passos Manuel</p>
-<p style="margin: 0">Miguel Mesquita is the new head of Cinema Passos Manuel in Porto. He holds a master’s degree in Cinema from Universidade Católica Portuguesa and has built his path in cultural production and programming. He is one of the founders of BADLANDS, a project exploring the intersection of music and cinema, with a programme of film screenings and live music performances.</p>
+<p style="margin: 8px 0 14px">Badlands / <a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a></p>
+<p style="margin: 0">Miguel Mesquita is the new head of <a class="map" href="https://maps.app.goo.gl/hQkNME4bJ9umSqhK6" target="_blank" rel="noopener">Cinema Passos Manuel</a> in Porto. He holds a master’s degree in Cinema from Universidade Católica Portuguesa and has built his path in cultural production and programming. He is one of the founders of BADLANDS, a project exploring the intersection of music and cinema, with a programme of film screenings and live music performances.</p>
 </article>
 
 <article style="padding-top: 14px; border-top: 3px solid var(--main)">
@@ -495,8 +518,8 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <p style="margin: 0"><a href="https://academy.180.pt/2024">See previous edition</a></p>
 </div>
 <div style="flex: 1 1 360px; min-width: 0; max-width: 36em; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-size: clamp(30px, 2.9vw, 42px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">About Canal180</h3>
-<p style="margin: 0">Canal180 is an independent media platform based in Porto, Portugal, dedicated to creativity and culture.</p>
+<h3 style="margin: 0; font-size: clamp(30px, 2.9vw, 42px); font-weight: 500; line-height: 1; letter-spacing: -0.04em">About <a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a></h3>
+<p style="margin: 0"><a class="ig" href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">Canal180</a> is an independent media platform based in Porto, Portugal, dedicated to creativity and culture.</p>
 <p style="margin: 0">Founded in 2011 as a groundbreaking TV channel, it has evolved into a space where filmmakers, musicians, designers, photographers, and artists of all kinds share how they see, think, and create. Through original documentaries, interviews, and experimental audiovisual projects and events we explore the creative process and the ideas shaping culture today.</p>
 </div>
 </div>
@@ -507,6 +530,7 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 <div style="display: flex; flex-wrap: wrap; gap: 12px 48px">
 <p style="margin: 0">by<br><a href="https://www.canal180.pt" target="_blank" rel="noopener" style="display: inline-block; margin-top: 8px"><img src="assets/canal180-logo.png" alt="Canal180" width="86" height="48" style="display: block; width: 86px; height: auto"></a></p>
 <p style="margin: 0">in collaboration with<br><a href="https://portopostdoc.com" target="_blank" rel="noopener" style="display: inline-block; margin-top: 8px"><img src="assets/porto-post-doc.png" alt="Porto/Post/Doc" width="86" height="64" style="display: block; width: 86px; height: auto"></a></p>
+<p style="margin: 0">Contact<br><a href="mailto:info@canal180.pt">info@canal180.pt</a><br><a href="https://www.instagram.com/canal180/" target="_blank" rel="noopener">@canal180</a></p>
 </div>
 </footer>
 
